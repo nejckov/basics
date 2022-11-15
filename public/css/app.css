@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.form {
+    border: 10px dotted green;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+
+
+.form input {
+    padding: 5px;
+    margin: 10px;
+    font-size: 25px;
+    border: 5px solid blue;
+    border-radius: 15px;
+}
+
+
+#meni {
+    background-color: aqua;
+    padding: 1.5em;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#meni ul {
+    display: flex;
+    justify-content: space-between;
+    
+    list-style: none;
+    text-align: right;
+}
+
+#meni ul li {
+    margin-right: 1em;
+}
+
+@media (max-width: 400px) {
+    #meni {
+        flex-direction: column;
+        background-color: brown;
+    }
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    border: 1px solid black
+}
+
+td {
+    border: 1px solid black;
+}
