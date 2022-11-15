@@ -1,4 +1,4 @@
-POTREBNI UKAZI
+POTREBNI UKAZI<br>
 
 ==================================================================<br>
 composer install <br>
@@ -15,6 +15,7 @@ php artisan make:model Uporabnik -m <br>
 php artisan migrate <br>
 (po vpisu podatkov v migracijsko tabelo ti migrira oz. ustvari novo tabelo)<br>
 
+======================================================================<br>
 
 php artisan make:controller ComputerController --resource<br>
 ali<br>
