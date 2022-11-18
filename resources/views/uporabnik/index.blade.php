@@ -3,7 +3,7 @@
 
 
 @section('content')
-    <a href="uporabnik/create">Create</a>
+    <a href="{{ route('uporabnik.create') }}">Create</a>
     
     <hr>
 

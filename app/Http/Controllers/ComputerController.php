@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Uporabnik;
 use Illuminate\Http\Request;
 
-class UporabnikController extends Controller
+class ComputerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,7 @@ class UporabnikController extends Controller
      */
     public function index()
     {
-        
-        $uporabnik = Uporabnik::all();
-        
-        return view('uporabnik.index', ['uporabnik' => $uporabnik]);
+        //
     }
 
     /**
@@ -27,7 +23,7 @@ class UporabnikController extends Controller
      */
     public function create()
     {
-        return view('uporabnik.create');
+        //
     }
 
     /**
@@ -38,18 +34,7 @@ class UporabnikController extends Controller
      */
     public function store(Request $request)
     {
-        
-        /* Uporabnik::create([
-            'uporabnik' => $request['uporabnik'],
-            'ime' => $request['ime'],
-            'priimek' => $request['priimek'],
-            'naslov' => $request['naslov'],
-            'starost' => $request['starost']
-        ]); */
-        
-        Uporabnik::create($request->all());
-        
-        return redirect()->route('uporabnik.index');
+        //
     }
 
     /**
@@ -71,10 +56,7 @@ class UporabnikController extends Controller
      */
     public function edit($id)
     {
-        
-        $uporabnik = Uporabnik::where('id', $id)->first();
- 
-        return view('uporabnik.edit', ['uporabnik' => $uporabnik ]);
+        //
     }
 
     /**
@@ -86,18 +68,7 @@ class UporabnikController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
-        $uporabnik = Uporabnik::where('id', $id)->first();
-        
-        $uporabnik->uporabnik = $request['uporabnik'];
-        $uporabnik->ime = $request['ime'];
-        $uporabnik->priimek = $request['priimek'];
-        $uporabnik->naslov = $request['naslov'];
-        $uporabnik->starost = $request['starost'];
-        
-        $uporabnik->save();
-        
-        return redirect()->route('uporabnik.index');
+        //
     }
 
     /**
@@ -108,9 +79,6 @@ class UporabnikController extends Controller
      */
     public function destroy($id)
     {
-        
-        Uporabnik::find($id)->delete();
-        
-        return redirect()->route('uporabnik.index');
+        //
     }
 }
