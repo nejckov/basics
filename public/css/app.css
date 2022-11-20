@@ -3,35 +3,65 @@
     padding: 0px;
 }
 
+body{
+    background-image: url("../img/background1.jpg");
+    background-size:cover;
+    
+}
+
+
+.form-control{
+margin: 1px;
+color:black;
+font-weight: 800;
+font-style: italic;
+padding-block: 5px;
+font-size: 1.8em;
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+.input-control{
+    color: rgba(176, 197, 190, 0.884);
+   
+}
 
 .form {
-    border: 10px dotted green;
+    border: 5px black;
     display: flex;
     flex-direction: column;
     width: 40vw;
 }
 
+.center{
+    width: 20%;
 
+}
 
 .form input {
     padding: 5px;
     margin: 10px;
-    font-size: 25px;
-    border: 5px solid blue;
-    border-radius: 15px;
+    font-size: 20px;
+    border: 1px solid rgb(27, 138, 55);
+    border-radius: 5px;
 }
 
 
 #meni {
-    background-color: aqua;
+    background-color: rgba(0, 255, 21, 0.158);
     padding: 1.5em;
-    
+    font-size: 2em;
+    text-transform: uppercase;
+    color: rgb(20, 5, 48);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-
+a{
+    text-decoration: none;
+    
+}
 #meni ul {
     display: flex;
     justify-content: space-between;
@@ -53,6 +83,9 @@
 
 table {
     width: 100%;
+    background-image:
+     linear-gradient(to right bottom, rgb(0, 0, 255), rgb(255, 192, 203)),
+      url("../img/background.jpg");
 }
 
 th {
@@ -61,4 +94,22 @@ th {
 
 td {
     border: 1px solid black;
+}
+
+.flex{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.gumb {
+   width: 35%;
+   
+}
+.btn-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 38%;
 }
